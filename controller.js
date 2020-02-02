@@ -13,8 +13,10 @@ module.exports = {
                 res.status(500).send({'ERROR': err})
                 return
             }
+            else{
+                res.status(200).send({'data': company})
+                return
+            }
         })
-        res.status(200).send({'data': company})
-        return
     }
 }
